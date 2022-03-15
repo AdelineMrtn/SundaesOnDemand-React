@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 //import {useState} from 'react';
-import SummaryForm from './page/summary/SummaryForm';
+import SummaryForm from './pages/summary/SummaryForm';
 
 function App() {
   return (
     <SummaryForm>
-      
     </SummaryForm>
   );
 }
