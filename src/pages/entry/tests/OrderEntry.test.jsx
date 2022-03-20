@@ -15,7 +15,7 @@ test('handles errors for scoops and toppings routes', async () => {
         )
     );
 
-    render(<OrderEntry/>, { wrapper: OrderDetailsProvider });
+    render(<OrderEntry setOrderPhase={jest.fn()}/>, { wrapper: OrderDetailsProvider });
 
     await waitFor(async () => { 
         const alerts = await screen.findAllByRole('alert');
